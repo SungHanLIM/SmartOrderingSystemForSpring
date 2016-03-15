@@ -1,0 +1,43 @@
+.remodal-star {
+	color: #EF9F0E;
+	border: 2px solid #E56508;
+	background: #f4f4f4;
+}
+
+div ul li {
+	float: left;
+	list-style: none;
+}
+
+#btn-like1, #btn-like2, #btn-like3, #btn-like4, #btn-like5 {
+	background-color: #FCF23F;
+}
+
+#btn-exit {
+	background-color: #0600FF;
+}
+
+h2 {
+	font-size: 100%;
+}
+
+.btn_detail {
+	display: inline-block;
+	padding: 0% 0%;
+	margin-bottom: 0;
+	font-size: 14px;
+	font-weight: 400;
+	line-height: 1.42857143;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	touch-action: manipulation;
+	cursor: pointer;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	background-image: none;
+	border: 1px solid transparent;
+	border-radius: 4px;
+}

@@ -1,0 +1,26 @@
+<%@ page pageEncoding="utf-8"%>
+	
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>smartOrderingSystem</title>
+
+<%@ include file="/WEB-INF/jsp/common/taglibs.jsp"%>
+ 
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/WACHproject.css'/>" />
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/bootstrap.min.css'/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/bootstrap-responsive.css'/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/jquery.ratings.css'/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/jquery.remodal.css'/>" />
+<link rel="stylesheet" type="text/css" href="<c:url value='/css/mMenuFinder.css'/>" />
+
+
+<script src="<c:url value='/js/jquery.mobile-1.4.5.js'/>" charset="utf-8"></script>
+<script src="<c:url value='/js/jquery-1.11.2.js'/>" charset="utf-8"></script>
+<script src="<c:url value='/js/bootstrap-carousel.js'/>" charset="utf-8"></script>
+<script src="<c:url value='/js/bootstrap.min.js'/>" charset="utf-8"></script>
+<script src="<c:url value='/js/jquery.ratings.js'/>" charset="utf-8"></script>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<!-- <script>window.jQuery || document.write('<script src="/js/jquery.min.js"><\/script>')</script> -->
+<script src="<c:url value='/js/jquery.remodal.js'/>" charset="utf-8"></script>

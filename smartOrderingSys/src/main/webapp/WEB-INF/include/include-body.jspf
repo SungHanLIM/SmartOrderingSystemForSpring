@@ -1,0 +1,95 @@
+<%@ page pageEncoding="utf-8"%>
+<form id="commonForm" name="commonForm"></form>
+
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#mMenuFinder").on("click", function(e) {
+			e.preventDefault();
+			fn_mMenuFinder();
+		});
+		$("#mMain").on("click", function(e) {
+			e.preventDefault();
+			fn_mMain();
+		});
+		$("#mMenuFinder").on("click", function(e) {
+			e.preventDefault();
+			fn_mMenuFinder();
+		});
+		$("#mBusiness").on("click", function(e) {
+			e.preventDefault();
+			fn_mBusiness();
+		});
+		$("#mGuideWayStart").on("click", function(e) {
+			e.preventDefault();
+			fn_mGuideWayStart();
+		});
+
+		$("#Q_A").on("click", function(e) {
+			e.preventDefault();
+			fn_openBoardList();
+		});
+		
+		$("#update").on("click", function(e){ //수정하기 버튼
+			e.preventDefault();
+			fn_openBoardUpdate();
+		});
+		
+		$("a[name='file']").on("click", function(e){ //파일 이름
+			e.preventDefault();
+			fn_downloadFile($(this));
+		});
+	});
+
+	function fn_mMenuFinder() {
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/mMenuFinder.do' />");
+		comSubmit.submit();
+	}
+	
+	function fn_mMain() {
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/mMain.do' />");
+		comSubmit.submit();
+	}
+	
+	function fn_mMenuFinder() {
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/mMenuFinder.do' />");
+		comSubmit.submit();
+	}
+	
+	function fn_mBusiness() {
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/mBusiness.do' />");
+		comSubmit.submit();
+	}
+	
+	function fn_mGuideWayStart() {
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/mGuideWayStart.do' />");
+		comSubmit.submit();
+	}
+	
+	function fn_openBoardList() {
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/sample/openBoardList.do' />");
+		comSubmit.submit();
+	}
+	
+	function fn_openBoardUpdate(){
+		var idx = "${map.IDX}";
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/sample/openBoardUpdate.do' />");
+		comSubmit.addParam("IDX", idx);
+		comSubmit.submit();
+	}
+	
+	function fn_downloadFile(obj){
+		var idx = obj.parent().find("#IDX").val();
+		var comSubmit = new ComSubmit();
+		comSubmit.setUrl("<c:url value='/common/downloadFile.do' />");
+		comSubmit.addParam("IDX", idx);
+		comSubmit.submit();
+	}
+	
+</script>
